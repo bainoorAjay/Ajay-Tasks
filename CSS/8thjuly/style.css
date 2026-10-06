@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container{
+   
+    border: 1px solid rgb(109, 65, 65);
+    height:580px;
+    width: 1270px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:50px 50px auto 50px;
+    
+  
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.header{
+background-color: red;
+grid-column: 1/5;
+grid-row: 1/1;
+ display: flex;
+align-items: center;
+justify-content: space-between;
+color: #fff;
+}
+p input{
+    width: 170px;
+    height: 30px;
+    border: 2px solid black;
+}
+p button{
+    background-color: black;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.navbar{
+    background-color: rebeccapurple;
+    grid-column: 1/5;
+     display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: rgb(240, 108, 108);
+    font-family: cursive;
+    background-color: rgb(234, 228, 228);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.sidebar{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar h2{
+    margin-top: 50px;
+   
+}
+.sidebar ul{
+    width: 80%;
+}
+ul li{
+    cursor: pointer;
+    list-style: none;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 5px;
+    border:2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main{
+     background-color: #fff;
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.images{
+   display: flex;
+   gap: 5px; 
+}
+.card{
+   /* background-color: #fff; */
+    width: 300px;
+    height: 410px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(218, 139, 139);
+    color: white ;
+}
+.card img{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    height: 70%;
+}
+.section{
+    background-color: pink;
+    grid-column: 2/6;
+ 
+
+}
+.footer{
+    background-color: red;
+    grid-column: 1/5;
+    cursor: pointer;
+   
+}

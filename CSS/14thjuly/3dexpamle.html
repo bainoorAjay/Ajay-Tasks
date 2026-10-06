@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+  /* .box{
+ width: 300px;
+ height: 300px;
+ background-color: red;
+ transition: all 3s linear;
+}
+.box:hover{
+    transform: rotateX(-45deg);
+} */
+ .box{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+ }
+ .box1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition: all 3s linear;
+ }
+ #child1:hover{
+   transform: rotateX(60deg);
+ }
+ #child2:hover{
+    transform:rotateX(-60deg) ;
+ }
+ #child3:hover{
+    transform:translateZ(50px);
+ }
+    </style>
+  
+</head>
+<body>
+    <div class="box">
+       
+    
+    <div class="box1" id="child1">hero1</div>
+    <div class="box1" id="child2">hero2</div>
+    <div class="box1" id="child3">hero3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 1000px;
+            height: 500px;
+            border: 1px solid green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+
+        }
+        .box{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+          
+        }
+        #child1{
+            background-color: lightblue;
+             transition: all 3s linear;
+            
+        }
+        #child1:hover{
+        transform:translatex(-100px);
+        }
+         #child2{
+            background-color: rgb(211, 189, 133);
+         transition: all 3s linear;
+        }
+          #child2:hover{
+            transform:translate(100px,100px);
+        }
+         #child3{
+            background-color: rgb(150, 224, 151);
+             transition: all 3s linear;
+
+        }
+        #child3:hover{
+            transform:translateY(100px);
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="box" id="child1">hero1</div>
+    <div class="box" id="child2">hero2</div>
+    <div class="box" id="child3">hero3</div>
+   </div> 
+</body>
+</html>

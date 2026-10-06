@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#container {
+  margin: 10px;
+  padding: 10px;
+  width: 1000px;
+  height: 600px;
+  border: 1px solid black;
+background-image: radial-gradient(skyblue,blue);
+  display: grid;
+  grid-template-columns: 1fr repeat(6, 1fr);
+  grid-template-rows: 3fr 1fr 2fr 2fr 2fr 2fr 1fr 3fr 6fr 3fr;
+  gap: 5px;
+ 
+}
+.child {
+  border: 1px solid black;
+
+ 
+ 
+}
+#box1 {
+
+  grid-column: 1/9;
+  background-color: rgb(142, 142, 245);
+  box-shadow: 1px 1px 1px 3px skyblue;
+  padding: 5px;
+  color: white;
+
+}
+#box1 header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+#box1 p{
+    padding-left: 250px;
+    padding-right: 0px;
+    display: flex;
+   
+}
+#box1 input{
+    background-color: black;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    height: 30px;
+   
+}
+#box2 {
+  grid-row: 2/10;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 35px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+#box2 a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 50, 50);
+    border-radius: 10px;
+}
+#box2 a:hover{
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+}
+#box3 {
+  grid-row: 2/6;
+  grid-column: 2/5;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+color: white;
+background-image: linear-gradient(blue,skyblue);
+border-radius: 10px;
+}
+#box3 button{
+    width: 130px;
+    height: 30px;
+    background-color:gray;
+    border-radius: 5px;  
+    color: white;
+}
+#box4 {
+  grid-column: 5/9;
+  grid-row: 2/4;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#box5 {
+  grid-column: 5/9;
+  grid-row: 4/6;
+  color: white;
+  background-color: black;
+ padding-left: 130px;
+  border-radius: 10px;
+}
+#box5 ul{
+   padding-left: 50px;
+   
+   
+}
+#box6 {
+  grid-column: 2/4;
+  grid-row: 6/9;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#box7 {
+  background-color: black;
+  grid-column: 4/9;
+  grid-row: 6/9;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+#box7 img{
+    border: 1px solid red;
+     border-radius: 10px;
+    width: 170px;
+    height: 65px;
+}
+#box8{
+    background-color: gainsboro;
+    text-align: center;
+   padding-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#box9{
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+}
+#box9 ul{
+    
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#box10{
+      padding: 5px;
+       padding-left: 20px;
+align-items:end;
+color:white;
+justify-content: center;
+border: 1px solid white;
+background-color: black;
+}
+#box10 img{
+   
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+#box12 {
+  grid-column: 1/9;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding:15px;
+  border-radius: 10px;
+}

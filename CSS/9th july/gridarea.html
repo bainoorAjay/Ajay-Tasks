@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />i3
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 1000px;
+            height: 550px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px 300px 100px;
+        gap: 10px;
+        border-radius: 10px;
+        grid-template-areas: "footer footer footer footer" " main side side side" " header header header header";
+      }
+      .box {
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      #header {
+        grid-area: header;
+        background-color: red;
+      }
+      #side {
+        background-color: yellow;
+        grid-area: side;
+      }
+      #main {
+        background-color: green;
+        grid-area: main;
+      }
+      #footer {
+        background-color: brown;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box" id="header">HEADER</div>
+      <div class="box" id="side">ASIDE</div>
+      <div class="box" id="main">MAIN</div>
+      <div class="box" id="footer">FOOTER</div>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+#one{
+    background-color: rgb(255,0, 0);
+    color: #ff00ff;
+}
+#color{
+background-color: rgb(0,255, 0);
+    color: #ffff00;
+}
+#two{
+    background-color: rgb(0, 0, 255);
+    color: #00ffff;
+}
+.html{
+    background-color: hsl(0, 100%, 40%);
+}

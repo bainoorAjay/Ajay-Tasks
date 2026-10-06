@@ -1,0 +1,61 @@
+.div1{
+    width:400px;
+    height: 400px;
+    background-image: linear-gradient(to top right,rgb(250, 170, 22),rgb(237, 53, 160),rgb(204, 10, 204));
+    border-radius: 20%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#child1{
+background-color: white;
+height: 300px;
+  width: 300px;
+  
+  border-radius: 20%;
+    margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#child2{
+    height: 250px;
+    width: 250px;
+     background-image: linear-gradient(to top right,rgb(250, 170, 22),rgb(237, 53, 160),rgb(204, 10, 204));
+    border-radius: 20%;
+
+}
+#child3{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px;
+    
+position: absolute;
+}
+#child4{
+      background-image: linear-gradient(to top right,rgb(250, 170, 22),rgb(237, 53, 160),rgb(204, 10, 204));
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      margin:15px;
+      
+      border-radius: 50%;
+       display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    
+}
+#circle{
+    position: absolute;
+background-color: white;
+width: 20px;
+height: 20px;
+left: 270px;
+margin: 10px;
+border-radius: 10px;
+}

@@ -1,0 +1,11 @@
+/* #h{
+   text-decoration: line-through dashed red;
+} */
+ #box{
+    text-transform: capitalize;
+ }
+ #indent{
+    text-indent: 20px;
+    line-height: 50px;
+    font-family: serif;
+ }

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      #main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1100px;
+        height: 90%;
+        border: 2px solid black;
+        background-color: yellow;
+      }
+      .card {
+        perspective: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 600px;
+      }
+      .parent {
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+      
+      }
+      .front,
+      .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+      }
+      .front {
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transform: rotatex(0deg);
+      }
+      .back {
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transform: rotatex(180deg);
+      }
+      .card:hover .parent {
+        transform: rotatex(180deg);
+      }
+      .card2 {
+        perspective: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 500px;
+      
+      }
+      .child-card {
+        position: relative;
+        height: 300px;
+        width: 200px;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+       
+      }
+      .fronta,
+      .backa {
+       position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 300px;
+        backface-visibility: hidden;
+        border-radius: 10px;
+      }
+      .fronta {
+        background-color: blue;
+        
+        transform: rotatey(0deg);
+      }
+      .backa {
+        background-color: lightblue;
+        
+        transform: rotatey(180deg);
+      }
+      .card2:hover .child-card{
+        transform: rotateY(180deg);
+      }
+      .card3{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         width: 300px;
+        height: 500px;
+
+      }
+      .parent-card3{
+        position: relative;
+        height: 300px;
+        width: 200px;
+       transform-style: preserve-3d;
+       transition: transform 1s;
+       animation: card1 1s infinite;
+     
+       
+      }
+      .frontb,.backb{
+        position: absolute;
+     
+        backface-visibility: hidden;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+      }
+      .frontb{
+        background:linear-gradient(pink,purple) ;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotatex(0deg);
+      }
+      .backb{
+        background:linear-gradient(blue,skyblue);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform:rotatex(180deg);
+      }
+
+       .card4{
+       perspective: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         width: 300px;
+        height: 500px;
+
+      }
+    
+        .parent-card4{
+      position: relative;
+        height: 300px;
+        width: 200px;
+       transform-style: preserve-3d;
+       transition: transform 1s;
+       animation: card2 3s infinite;
+      }
+      .frontc,.backc{
+        position: absolute;
+     
+        backface-visibility: hidden;
+        width: 200px;
+        height: 300px;
+        border-radius: 10px;
+      }
+      .frontc{
+        background-color: red;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(0deg);
+      }
+      .backc{
+        background-color: blue;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform:rotateY(180deg);
+      }
+     
+ @keyframes card1{
+  from{
+    transform: rotatex(180deg);
+  }
+  to{
+    transform: rotatex(360deg);
+  }
+    /* 0%{
+        transform: rotateX(0deg);
+    }
+
+    40%{
+        transform: rotateX(0deg);
+    }
+
+    50%{
+        transform: rotateX(180deg);
+    }
+
+    90%{
+        transform: rotateX(180deg);
+    }
+
+    100%{
+        transform: rotateX(360deg);
+    } */
+ }
+
+ @keyframes card2{
+    0%{
+        transform: rotateY(0deg);
+    }
+    40%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    80%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+ }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+
+         <div class="card">
+      <div class="parent">
+        <div class="front" id="child"><h2>Front</h2></div>
+        <div class="back" id="child"><h2>Back</h2></div>
+      </div>
+    </div>
+    
+    <div class="card2">
+      <div class="child-card">
+        <div class="fronta" id="child"><h2>Front</h2></div>
+        <div class="backa" id="child"><h2>Back</h2></div>
+      </div>
+    </div>
+
+    <div class="card3">
+      <div class="parent-card3">
+        <div class="frontb" id="child"><h2>Front</h2></div>
+        <div class="backb" id="child"><h2>Back</h2></div>
+      </div>
+    </div>
+
+      <div class="card4">
+      <div class="parent-card4">
+        <div class="frontc" id="child"><h2>Front</h2></div>
+        <div class="backc" id="child"><h2>Back</h2></div>
+      </div>
+    </div>
+
+    <!-- <div class="card4">
+      <div class="parent-card4">
+        <div class="frontc" id="child"><h2>Front</h2></div>
+        <div class="backc" id="child"><h2>Back</h2></div>
+      </div> -->
+    </div>
+
+    </div>
+   
+    
+  </body>
+</html>

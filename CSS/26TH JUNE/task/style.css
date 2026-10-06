@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+}
+
+#h {
+  background-color: aquamarine;
+  color: mediumvioletred;
+  text-align: center;
+  align-items: center;
+}
+#HH {
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(gray, pink);
+  color: white;
+}
+#child1 {
+bottom: 50px;
+  position: relative;
+  border: 1px solid red;
+  width: 600px;
+  height: 600px;
+  margin-left: 330px;
+  margin-top: 70px;
+}
+#child2 {
+  position: absolute;
+
+  top: 190px;
+  right: 550px;
+}
+#sun {
+  position: absolute;
+  top: -58px;
+  right: 280px;
+}
+#car {
+  position: absolute;
+  top: 150px;
+  left: 117px;
+}
+#bulb {
+  position: absolute;
+  top: 340px;
+}
+#card {
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  height: 130px;
+  width: 250px;
+  top: 250px;
+  left: 70px;
+}
+#o{
+  background-color: red;
+border-radius: 10px;
+width: 100px;
+}
+
+
+#btn{
+  padding: 4px;
+  position: absolute;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 50px;
+  border-radius:250px;
+  left: 200px;
+  bottom: 110px;
+}
+#su{
+  position: absolute;
+  left: 290px;
+  top: 380px;
+  
+}
+#us{
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  color: white;
+}
+#popular{
+ margin: 80px;
+ position: absolute;
+ top: 800px;
+ right: 850px;
+
+  display: inline-block;
+
+  background-color: cornsilk;
+  width: 300px;
+  height:300px;
+   border-radius: 20px;
+
+}
+#place{
+  margin: 3px;
+  display: inline-block;
+  position: absolute;
+  left: 460px;
+  top: 730px;
+  background-color: cornsilk;
+  width: 300px;
+  height:300px;
+  border-radius: 20px;
+}
+#india{
+  margin:175px;
+  display: inline-block;
+  position: absolute;
+  left: 750px;
+  top: 700px;
+  background-color: cornsilk;
+  width: 300px;
+  height:300px;
+  border-radius: 20px;
+}
+#para{
+  padding: 5px;
+  display: inline;
+  align-items: center;
+}
+
+#one{
+  background-color: lightpink;
+  margin: 5px;
+  width: 1250px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+#gallery{
+  margin-left: 180px;
+  background-color: white;
+  align-items: center;
+  border: 1px solid black;
+  height: 600px;
+  width: 900px;
+ 
+}
+#a{
+  display: inline-block;
+  position: absolute;
+ 
+
+}
+#b{
+  display: inline-block;
+  position: absolute;
+  left: 690px;
+  
+}
+#c{
+  display: inline-block;
+  position: absolute;
+  top: 1630px;
+
+  
+}
+#d{
+  display: inline-block;
+  position: absolute;
+  top: 1630px;
+  right: 210px;
+
+  
+}
+#e{
+  display: inline-block;
+  position: absolute;
+  top: 1450px;
+  right: 500px;
+  
+}
+#inno{
+  border: 1px solid black;
+  width: 100%;
+  height: 600px;
+}
+#m,#n,#x,#y,#z{
+border-radius: 10px;
+border: 2px solid black;
+padding: 5px;
+}
+#ha{
+  padding: 30px;
+  color: palevioletred;
+}
+#travel{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  width: 98%;
+  height: 200px;
+  border: 1px solid black;
+  color: rgb(18, 43, 43);
+}

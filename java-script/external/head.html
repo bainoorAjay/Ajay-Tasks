@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function addValue() {
+        var num1 = parseInt(document.getElementById("a").value);
+        var num2 = parseInt(document.getElementById("b").value);
+        var sum = num1 + num2;
+        document.getElementById("c").value = sum;
+        return false;
+        //    document.write("the result of two Numbers =",sum)
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return addValue();">
+      <label for="">enter a num1 </label>
+      <input type="text" name="" id="a" />
+      <br />
+      <label for="">enter a num2 </label>
+
+      <input type="text" name="" id="b" />
+      <br />
+      <input type="submit" value="submit" />
+      <br />
+      <br />
+      <label for=""> Result </label>
+      <input type="test" placeholder="result" id="c" readonly />
+    </form>
+  </body>
+</html>
